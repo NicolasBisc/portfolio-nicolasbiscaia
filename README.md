@@ -32,18 +32,10 @@ app.js          interações: cartas, filtros, galeria e tema
 assets/         currículo em PDF e prints dos projetos
 ```
 
-## Rodar no computador
+## Publicação
 
-Abra `index.html` no navegador, ou sirva a pasta:
-
-    python -m http.server 8000
-
-e acesse http://localhost:8000.
-
-## Publicar
-
-O Vercel publica a branch `main` a cada push (Framework Preset: **Other**,
-sem build).
+O site é publicado automaticamente pelo Vercel a cada atualização da branch
+`main`.
 
 ## Atualizar
 
