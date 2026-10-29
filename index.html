@@ -3,224 +3,261 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nicolas Biscaia | Portfólio Profissional</title>
-<meta name="description" content="Portfólio profissional de Nicolas Biscaia, estudante de Engenharia de Software na Universidade Positivo.">
+<title>Nicolas Biscaia · Desenvolvedor em formação</title>
+<meta name="description" content="Nicolas Biscaia, estudante de Engenharia de Software e Aprendiz em Tecnologia na Koube Química do Brasil. Projetos reais, currículo e contato.">
+<meta name="theme-color" content="#0A0A0B">
+<meta property="og:title" content="Nicolas Biscaia · Desenvolvedor em formação">
+<meta property="og:description" content="Transformo processos manuais da fábrica em ferramentas simples, que funcionam no dia a dia.">
+<meta property="og:image" content="assets/sistema-dashboard.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230A0A0B'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='26' fill='%23F2A93B'>NB</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Lora:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("tema");if(t==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="topo" id="topo">
-  <a class="marca" href="#inicio">Nicolas Biscaia</a>
-  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-  <nav id="menu" aria-label="Seções do portfólio">
-    <a href="#curriculo">Currículo</a>
-    <a href="#presenca">LinkedIn e GitHub</a>
-    <a href="#carreira">Plano de carreira</a>
-    <a href="#aprendizado">Aprendizado</a>
-    <a href="#posicionamento">Posicionamento</a>
-    <a href="#pitch">Pitch</a>
-    <a class="pdf" href="portfolio-nicolas-biscaia.pdf" download>Baixar PDF</a>
-  </nav>
+  <div class="wrap">
+    <a class="marca" href="#inicio"><span>NB</span>Nicolas Biscaia</a>
+    <div class="topo-dir">
+    <button type="button" class="tema" id="tema" aria-label="Alternar tema claro e escuro" title="Tema claro / escuro"><svg class="lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg></button>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#ambicoes">Ambições</a>
+      <a href="#contato">Contato</a>
+      <a class="cv" href="assets/curriculo-nicolas-biscaia.pdf" download>Currículo</a>
+    </nav>
+    </div>
+  </div>
 </header>
 
 <main id="conteudo">
 
+<!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-txt">
-    <p class="sobre">Portfólio profissional</p>
-    <h1>Nicolas<br>Biscaia</h1>
-    <p class="sub">Estudante de Engenharia de Software e Aprendiz na Koube Química do Brasil. Transformo processos manuais da fábrica em ferramentas simples, que funcionam no dia a dia.</p>
-    <div class="acoes">
-      <a class="btn" href="#pitch">Assistir ao pitch</a>
-      <a class="btn sec" href="portfolio-nicolas-biscaia.pdf" download>Baixar versão em PDF</a>
-    </div>
-  </div>
-  <pre class="codigo" aria-label="Trecho de código ilustrativo"><code id="typed"></code><span class="cursor" aria-hidden="true"></span></pre>
-  <dl class="hero-meta">
-    <div><dt>Projeto Integrador</dt><dd>Design da Minha Carreira, A2.3</dd></div>
-    <div><dt>Universidade Positivo</dt><dd>Engenharia de Software</dd></div>
-    <div><dt>Curitiba, PR</dt><dd>Outubro de 2026</dd></div>
-  </dl>
-</section>
-
-<section class="bloco intro">
-  <div class="wrap estreito">
-    <h2>Quem sou eu</h2>
-    <p>Sou estudante de Engenharia de Software na Universidade Positivo e Aprendiz na Koube Química do Brasil, onde aplico tecnologia no dia a dia de uma fábrica. Meu trabalho começa ouvindo quem está na operação: entender onde o processo trava, onde as informações se perdem e onde o retrabalho consome tempo. A partir disso, construo ferramentas simples que organizam os dados e dão mais autonomia para quem toma decisões.</p>
-    <blockquote>“Transformo processos manuais em software que funciona no dia a dia.”</blockquote>
-  </div>
-</section>
-
-<!-- 01 CURRICULO -->
-<section class="bloco" id="curriculo">
+  <div class="deck" id="deck" aria-hidden="true"></div>
+  <div class="veu" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="cab"><span class="n">01</span><h2>Currículo profissional</h2></div>
-    <div class="cv">
-      <aside class="cv-lado">
-        <h3>Objetivo</h3>
-        <p>Estágio em Desenvolvimento de Software ou vaga de Desenvolvedor Júnior, contribuindo com soluções simples que resolvam problemas reais.</p>
-        <h3>Habilidades técnicas</h3>
-        <ul class="tags"><li>Python</li><li>SQL básico</li><li>C básico</li><li>HTML</li><li>CSS</li><li>JavaScript básico</li><li>Git/GitHub</li><li>Excel Avançado</li><li>Power BI</li><li>TOTVS ERP</li><li>Pacote Office</li></ul>
-        <h3>Idiomas</h3>
-        <p>Português (nativo)<br>Inglês (básico)</p>
-        <h3>Certificados</h3>
-        <p>Inteligência Emocional<br>Excel do Básico ao Avançado<br>Atendimento ao Público<br><small>Fundação Bradesco</small></p>
-      </aside>
-      <div class="cv-main">
-        <article>
-          <div class="linha"><h3>Universidade Positivo</h3><span>Mar 2026 – presente</span></div>
-          <p class="cargo">Bacharelado em Engenharia de Software</p>
-          <ul class="pontos">
-            <li>Disciplinas: Algoritmos e Pensamento Computacional (C), Lógica de Programação, Python, Modelagem de Banco de Dados (SQL), Front-End para Web (HTML, CSS e JavaScript básico) e UX/UI Design.</li>
-            <li>Projeto Integrador <i>Design da Minha Carreira</i>: plano de carreira, posicionamento profissional e portfólio.</li>
-          </ul>
-        </article>
-        <article>
-          <div class="linha"><h3>Koube Química do Brasil</h3><span>Fev 2026 – presente</span></div>
-          <p class="cargo">Aprendiz, Auxiliar Administrativo / Tecnologia</p>
-          <ul class="pontos">
-            <li>Propôs o uso corporativo do Claude AI para a gestão e apoiou o treinamento presencial da equipe.</li>
-            <li>Centralizou o acervo digital da empresa no SharePoint, organizando arquivos dispersos por setor.</li>
-            <li>Atua no TOTVS ERP na gestão de requisições e no apoio a dashboards em Excel.</li>
-            <li>Desenvolveu do zero um treinamento interativo sobre a metodologia 5S, em HTML e CSS.</li>
-            <li>Criou ferramentas para o registro de manutenções corretivas e o acompanhamento de indicadores.</li>
-            <li>Automatizou relatórios com Python, substituindo a montagem manual de planilhas.</li>
-          </ul>
-        </article>
+    <div>
+      <p class="eyebrow">Desenvolvedor em formação · Curitiba</p>
+      <h1>Nicolas<br><em>Biscaia</em></h1>
+      <p class="sub">Estudante de Engenharia de Software e Aprendiz em Tecnologia na Koube Química do Brasil. <b>Transformo processos manuais da fábrica em ferramentas simples, que funcionam no dia a dia.</b></p>
+      <div class="acoes">
+        <a class="btn" href="#projetos">Ver projetos</a>
+        <a class="btn sec" href="assets/curriculo-nicolas-biscaia.pdf" download>Baixar currículo</a>
+      </div>
+      <div class="term" aria-label="Apresentação de Nicolas escrita como um pequeno algoritmo">
+        <div class="term-top"><i></i><i></i><i></i><span>sobre-mim.alg</span></div>
+        <pre><code id="typed"></code><span class="cursor" aria-hidden="true"></span></pre>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 02 PRESENCA -->
-<section class="bloco claro" id="presenca">
+<!-- NÚMEROS -->
+<section class="numeros" aria-label="Destaques">
   <div class="wrap">
-    <div class="cab"><span class="n">02</span><h2>LinkedIn e GitHub</h2></div>
-    <p class="lead">Meus perfis reúnem minha trajetória e o código dos projetos que desenvolvo. Os repositórios públicos usam cópias sem dados pessoais da empresa.</p>
-    <div class="perfis">
-      <a href="https://www.linkedin.com/in/nicolasbiscaia/" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/nicolasbiscaia</a>
-      <a href="https://github.com/NicolasBisc" target="_blank" rel="noopener"><span>GitHub</span>github.com/NicolasBisc</a>
-      <a href="https://nicolasbiscaia.dev" target="_blank" rel="noopener"><span>Site pessoal</span>nicolasbiscaia.dev</a>
+    <div class="n"><b>3</b><span>setores da produção no sistema que desenvolvi: Envase, Manipulação e Rotulagem</span></div>
+    <div class="n"><b>255</b><span>manutenções preventivas acompanhadas automaticamente</span></div>
+    <div class="n"><b>~790</b><span>ordens de serviço reunidas em um só histórico</span></div>
+    <div class="n"><b>2</b><span>relatórios de produção que deixaram de ser feitos à mão</span></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="bloco" id="sobre">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">01 · Sobre</p><h2>Do chão de fábrica<br>para o código.</h2></div></div>
+    <div class="sobre">
+      <div class="rv">
+        <p>Comecei na Koube Química do Brasil como aprendiz e logo percebi que boa parte do dia da operação era gasta montando planilhas, cruzando informações e conferindo números à mão. Foi aí que a programação deixou de ser só matéria da faculdade e virou ferramenta de trabalho.</p>
+        <p>Antes de escrever qualquer linha, eu procuro ouvir quem está na operação: onde o processo trava, onde a informação se perde, onde o retrabalho consome tempo. Só depois penso na solução, e de preferência na mais simples que resolva.</p>
+        <p>Sou muito curioso, gosto de aprender o tempo todo e de ajudar as pessoas ao meu redor. Quero crescer na área de desenvolvimento, chegar a especialista e, no futuro, empreender em tecnologia.</p>
+      </div>
+      <div class="principios rv">
+        <div class="princ"><div class="ic">01</div><div><h3>Entender antes de construir</h3><p>Converso com quem vai usar a ferramenta para resolver o problema certo.</p></div></div>
+        <div class="princ"><div class="ic">02</div><div><h3>Simples de usar</h3><p>Telas claras e linguagem do dia a dia. Tecnologia boa é a que todo mundo consegue usar.</p></div></div>
+        <div class="princ"><div class="ic">03</div><div><h3>Cuidado com os dados</h3><p>Informação de pessoas e da empresa tratada com responsabilidade, seguindo a LGPD.</p></div></div>
+        <div class="princ"><div class="ic">04</div><div><h3>Aprender sempre</h3><p>Cada projeto é uma chance de estudar algo novo e fazer melhor no próximo.</p></div></div>
+      </div>
     </div>
-    <h3 class="sec-tit">Projetos em destaque</h3>
-    <div class="projetos">
-      <article class="proj grande">
-        <h4>Sistema de Gestão de Produção e Manutenção</h4>
-        <p>Antes, o supervisor de produção organizava férias, programação de produção, treinamentos de RH e manutenções em planilhas paralelas, com cálculos feitos à mão. O sistema centraliza tudo isso: programação, manutenção preventiva e corretiva, colaboradores, férias, auditoria de alterações e indicadores de Meta x Realizado. Em fase de testes e implantação.</p>
-        <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>JavaScript</li><li>HTML/CSS</li><li>Docker</li></ul>
-        <p class="links"><a href="https://github.com/NicolasBisc/Sistema-de-Producao-Koube" target="_blank" rel="noopener">Ver repositório</a><a href="https://koube-producao.vercel.app/" target="_blank" rel="noopener">Ver interface</a></p>
-      </article>
-      <article class="proj">
-        <h4>Koube Análise Envase</h4>
-        <p>Lê a planilha de programação do mês e gera em Word o dashboard semanal de programado x realizado e o progresso acumulado da meta. Os dois relatórios passaram a sair da mesma fonte, sem digitação em dobro.</p>
-        <ul class="tags"><li>Python</li><li>Automação de relatórios</li></ul>
-        <p class="links"><a href="https://github.com/NicolasBisc/Koube-Analise-Envase" target="_blank" rel="noopener">Ver repositório</a></p>
-      </article>
-      <article class="proj">
-        <h4>Treinamento Interativo 5S</h4>
-        <p>Material de treinamento sobre a metodologia 5S para a equipe de produção, construído do zero. Projeto interno.</p>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section class="bloco alt" id="projetos">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">02 · Projetos</p><h2>Problemas reais,<br>soluções em uso.</h2></div><p>Ferramentas que construí para a fábrica. Os repositórios públicos usam versões anonimizadas, sem dados pessoais da empresa.</p></div>
+
+    <article class="case rv">
+      <div>
+        <span class="num">PROJETO 01</span>
+        <h3>Sistema de Gestão de Produção e Manutenção</h3>
+        <span class="status">Em operação interna desde agosto de 2026</span>
+        <div class="etapas">
+          <div class="etapa"><b>O problema</b><p>O supervisor de produção organizava férias, programação de produção, treinamentos de RH e manutenções em planilhas espalhadas, cada uma com seu formato e sua numeração.</p></div>
+          <div class="etapa"><b>O que eu fiz</b><p>Uma aplicação web que reúne programação, manutenção preventiva e corretiva, colaboradores, férias, treinamentos e o histórico de quem alterou o quê. O vencimento das preventivas é calculado sozinho.</p></div>
+          <div class="etapa"><b>Resultado</b><p>Tudo em um só lugar, e o supervisor ganhou autonomia para acompanhar a operação sem montar relatórios à mão.</p></div>
+        </div>
+        <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+        <div class="links-p">
+          <a class="btn-p" href="https://koube-producao.vercel.app/" target="_blank" rel="noopener">Abrir a interface ↗</a>
+          <a class="btn-p out" href="https://github.com/NicolasBisc/Sistema-de-Producao-Koube" target="_blank" rel="noopener">Ver o código ↗</a>
+        </div>
+      </div>
+      <figure class="galeria">
+        <button type="button" data-full="assets/sistema-dashboard.jpg" data-leg="Painel de produção: pontos de atenção e programado x realizado"><img src="assets/sistema-dashboard.jpg" alt="Painel de produção com a lista de pontos de atenção da manutenção" loading="lazy"><span>painel</span></button>
+        <button type="button" data-full="assets/sistema-manutencao.jpg" data-leg="Central de manutenção: preventivas e ordens de serviço"><img src="assets/sistema-manutencao.jpg" alt="Central de manutenção com indicadores de preventivas" loading="lazy"><span>manutenção</span></button>
+        <button type="button" data-full="assets/sistema-login.jpg" data-leg="Acesso por código e senha"><img src="assets/sistema-login.jpg" alt="Tela de acesso do painel de produção" loading="lazy"><span>acesso</span></button>
+        <figcaption>Telas da versão pública, com dados anonimizados. Clique para ampliar.</figcaption>
+      </figure>
+    </article>
+
+    <article class="case inv rv">
+      <div class="fluxo">
+        <div class="fluxo-passos" role="group" aria-label="Etapas da automação">
+          <button type="button" aria-pressed="true" data-i="0">planilha</button><i>→</i>
+          <button type="button" aria-pressed="false" data-i="1">leitura</button><i>→</i>
+          <button type="button" aria-pressed="false" data-i="2">cálculo</button><i>→</i>
+          <button type="button" aria-pressed="false" data-i="3">gráficos</button><i>→</i>
+          <button type="button" aria-pressed="false" data-i="4">relatório</button>
+        </div>
+        <div class="fluxo-det" id="fluxoDet" aria-live="polite"></div>
+        <div class="cmd"><span class="p">$</span> python gerar.py tudo<br><span class="p">$</span> python gerar.py semanal --semana 3</div>
+      </div>
+      <div>
+        <span class="num">PROJETO 02</span>
+        <h3>Relatórios automáticos do Envase</h3>
+        <span class="status">Em uso no setor de Envase</span>
+        <div class="etapas">
+          <div class="etapa"><b>O problema</b><p>Os relatórios semanal e mensal eram montados à mão, e cada um lia os números de um lugar diferente.</p></div>
+          <div class="etapa"><b>O que eu fiz</b><p>Uma ferramenta em Python que lê a planilha de programação do mês e gera em Word o dashboard semanal e o progresso da meta.</p></div>
+          <div class="etapa"><b>Resultado</b><p>Os dois relatórios saem da mesma fonte, sem digitação em dobro, e a gestão ganhou indicadores que antes não existiam.</p></div>
+        </div>
+        <ul class="tags"><li>Python</li><li>Excel</li><li>Automação</li></ul>
+        <div class="links-p"><a class="btn-p out" href="https://github.com/NicolasBisc/Koube-Analise-Envase" target="_blank" rel="noopener">Ver o código ↗</a></div>
+      </div>
+    </article>
+
+    <article class="case rv">
+      <div>
+        <span class="num">PROJETO 03</span>
+        <h3>Treinamento interativo 5S</h3>
+        <span class="status int">Projeto interno</span>
+        <div class="etapas">
+          <div class="etapa"><b>O que é</b><p>Um material de treinamento sobre a metodologia 5S para a equipe de produção, feito do zero em HTML e CSS e usado nas integrações e reciclagens do time.</p></div>
+        </div>
         <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+      </div>
+      <div class="vazio"><div><b>5S</b>Uso interno da Koube, sem versão pública.</div></div>
+    </article>
+  </div>
+</section>
+
+<!-- CONQUISTAS -->
+<section class="bloco" id="conquistas">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">03 · Na Koube</p><h2>O que já entreguei.</h2></div><p>Aprendiz, Auxiliar Administrativo / Tecnologia · desde fevereiro de 2026.</p></div>
+    <div class="conq">
+      <article class="rv"><div class="ic">SYS</div><h3>Sistema de produção</h3><p>Desenvolvi e coloquei em operação o sistema que centraliza produção e manutenção.</p></article>
+      <article class="rv"><div class="ic">PY</div><h3>Relatórios automáticos</h3><p>Troquei a montagem manual de planilhas por scripts em Python.</p></article>
+      <article class="rv"><div class="ic">AI</div><h3>IA na gestão</h3><p>Propus o uso corporativo do Claude AI e ajudei a treinar a equipe presencialmente.</p></article>
+      <article class="rv"><div class="ic">SP</div><h3>Arquivos organizados</h3><p>Centralizei o acervo digital no SharePoint, organizado por setor.</p></article>
+      <article class="rv"><div class="ic">ERP</div><h3>TOTVS e Excel</h3><p>Cuido de requisições no TOTVS e apoio os dashboards de metas em Excel.</p></article>
+      <article class="rv"><div class="ic">5S</div><h3>Treinamento 5S</h3><p>Criei do zero um treinamento interativo para a equipe de produção.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="bloco alt" id="habilidades">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">04 · Habilidades</p><h2>O que eu sei<br>e onde uso.</h2></div><p>Clique em uma habilidade para ver onde ela aparece no meu trabalho.</p></div>
+    <div class="filtros" role="group" aria-label="Filtrar habilidades">
+      <button type="button" aria-pressed="true" data-f="todas">Todas</button>
+      <button type="button" aria-pressed="false" data-f="ling">Linguagens</button>
+      <button type="button" aria-pressed="false" data-f="dados">Dados</button>
+      <button type="button" aria-pressed="false" data-f="ferr">Ferramentas</button>
+      <button type="button" aria-pressed="false" data-f="comp">Comportamentais</button>
+      <button type="button" aria-pressed="false" data-f="est">Estudando</button>
+    </div>
+    <div class="skills">
+      <div class="grade" id="grade"></div>
+      <aside class="painel" id="painel" aria-live="polite"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- AMBIÇÕES -->
+<section class="bloco" id="ambicoes">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">05 · Ambições</p><h2>O que me move.</h2></div><p>Mais do que um cargo, é o tipo de profissional que eu quero ser.</p></div>
+    <div class="amb">
+      <article class="rv"><span class="n">01</span><h3>Criatividade para ajudar</h3><p>Quero usar a criatividade para resolver problemas de verdade e facilitar o dia a dia de quem está ao meu redor, seja na fábrica, no escritório ou fora dele.</p></article>
+      <article class="rv"><span class="n">02</span><h3>Crescer no mercado</h3><p>Quero evoluir como desenvolvedor, aprender com times mais experientes e conquistar meu espaço no mercado de tecnologia, um projeto de cada vez.</p></article>
+      <article class="rv"><span class="n">03</span><h3>Ir sempre além</h3><p>Vejo a tecnologia como um jeito de alcançar sempre mais e de desvendar as minhas curiosidades. Cada pergunta que eu não sei responder vira um motivo para estudar.</p></article>
+    </div>
+    <div class="frase rv">
+      <blockquote>“Usar a criatividade para que a tecnologia <em>leve cada pessoa mais longe</em>.”</blockquote>
+      <div class="lobbies">
+        <span><b>Busco:</b> estágio em desenvolvimento</span>
+        <span>estágio em dados</span>
+        <span>áreas relacionadas à tecnologia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAÇÃO -->
+<section class="bloco alt" id="formacao">
+  <div class="wrap">
+    <div class="cab rv"><div><p class="eyebrow">06 · Formação</p><h2>Estudos e certificados.</h2></div></div>
+    <div class="form">
+      <article class="rv">
+        <span class="per">MAR 2026 – PRESENTE</span>
+        <h3>Universidade Positivo</h3>
+        <p class="crg">Bacharelado em Engenharia de Software</p>
+        <ul class="lista">
+          <li>Algoritmos e Pensamento Computacional (em C)</li>
+          <li>Lógica de Programação e Python</li>
+          <li>Modelagem de Banco de Dados (SQL)</li>
+          <li>Front-End para Web (HTML, CSS e JavaScript)</li>
+          <li>UX/UI Design e Projeto Integrador de carreira</li>
+        </ul>
+      </article>
+      <article class="rv">
+        <span class="per">CURSOS</span>
+        <h3>Certificados</h3>
+        <p class="crg">Concluídos e em andamento</p>
+        <div class="cert">
+          <div>Python para Dados · Alura<span class="and">em andamento</span></div>
+          <div>Back End com Java · Alura<span class="and">em andamento</span></div>
+          <div>Excel do Básico ao Avançado<span>Fundação Bradesco</span></div>
+          <div>Inteligência Emocional<span>Fundação Bradesco</span></div>
+          <div>Atendimento ao Público<span>Fundação Bradesco</span></div>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- 03 CARREIRA -->
-<section class="bloco" id="carreira">
-  <div class="wrap">
-    <div class="cab"><span class="n">03</span><h2>Plano de carreira</h2></div>
-    <p class="lead">Desenvolvimento de software, começando por back end e dados e ampliando para outras áreas ao longo da carreira, sempre criando sistemas que resolvem problemas reais de operação.</p>
-    <div class="diag">
-      <div><h3>Ponto forte</h3><p>Resolução de problemas reais. A automação com Python e a integração de dados operacionais (TOTVS, relatórios do Envase) mostram que entendo as regras do negócio, não só o código.</p></div>
-      <div><h3>Base atual</h3><p>Python (scripts e back end), banco de dados (PostgreSQL/SQL), front end básico (HTML, CSS e JavaScript) e noções de Docker para implantação.</p></div>
-      <div><h3>A desenvolver</h3><p>Consolidar Java para back end corporativo, aprofundar JavaScript para atuar como Full Stack e evoluir no inglês.</p></div>
-    </div>
-
-    <h3 class="sec-tit">Metas SMART</h3>
-    <ol class="linha-tempo">
-      <li>
-        <button class="etapa" aria-expanded="true"><span class="ano">2027</span><span class="tit">Estágio em back end<small>Curto prazo, até set/2027</small></span></button>
-        <div class="det"><p class="foco">Foco: Python ou Java (Spring Boot) e SQL avançado</p><ul class="pontos"><li>Candidatar-me a vagas de estágio em back end, usando os repositórios atuais como portfólio.</li><li>Iniciar um cronograma fixo de estudo de inglês, com foco em leitura técnica e escuta.</li><li>Adicionar testes automatizados ao Sistema de Gestão de Produção e Manutenção.</li></ul></div>
-      </li>
-      <li>
-        <button class="etapa" aria-expanded="false"><span class="ano">2028</span><span class="tit">Desenvolvedor Júnior<small>Médio prazo, até set/2028</small></span></button>
-        <div class="det" hidden><p class="foco">Foco: APIs REST, arquitetura e JavaScript/React</p><ul class="pontos"><li>Definir a trilha: aprofundar o back end ou adicionar um framework front end para atuar como Full Stack.</li><li>Passar de projetos individuais para contribuições em equipe (open source ou projetos da faculdade).</li><li>Praticar conversação em inglês (B1/B2) para entrevistas.</li></ul></div>
-      </li>
-      <li>
-        <button class="etapa" aria-expanded="false"><span class="ano">2029</span><span class="tit">Referência técnica em back end<small>Longo prazo, até set/2029</small></span></button>
-        <div class="det" hidden><p class="foco">Foco: microsserviços, mensageria, cloud e System Design</p><ul class="pontos"><li>Participar de projetos de diferentes áreas (indústria, finanças, logística) para ampliar a visão de negócio.</li><li>Liderar integrações e resolver gargalos de performance.</li><li>Alcançar inglês fluente (C1) e obter certificações em arquitetura ou cloud.</li></ul></div>
-      </li>
-      <li class="final">
-        <button class="etapa" aria-expanded="false"><span class="ano">2030+</span><span class="tit">Especialista e empreendedor<small>Visão de futuro</small></span></button>
-        <div class="det" hidden><p class="foco">Concluir a graduação e consolidar a carreira</p><ul class="pontos"><li>Consolidar-me no mercado, com experiência em várias áreas da tecnologia: back end, dados, front end e infraestrutura.</li><li>Chegar ao nível de especialista e participar de decisões de arquitetura.</li><li>Empreender na área de tecnologia, criando soluções próprias para empresas, principalmente da indústria.</li></ul></div>
-      </li>
-    </ol>
-
-    <div class="duas">
-      <div><h3>Competências técnicas necessárias</h3><ul class="pontos"><li>Lógica, algoritmos e estruturas de dados</li><li>SQL avançado e modelagem de banco</li><li>APIs REST e arquitetura de software</li><li>Testes automatizados e Git</li><li>Cloud, Docker e System Design</li></ul></div>
-      <div><h3>Competências comportamentais</h3><ul class="pontos"><li>Comunicação com áreas não técnicas</li><li>Organização e autonomia</li><li>Disciplina e consistência</li><li>Trabalho em equipe</li><li>Visão de negócio e liderança</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- 04 APRENDIZADO -->
-<section class="bloco claro" id="aprendizado">
-  <div class="wrap">
-    <div class="cab"><span class="n">04</span><h2>Desenvolvimento contínuo</h2></div>
-    <p class="lead">Aprender é parte da rotina, não uma etapa. Este é o plano de estudos que sustenta as metas da minha carreira.</p>
-    <div class="duas">
-      <div><h3>Habilidades técnicas</h3><ul class="pontos"><li>Java e Spring Boot para back end</li><li>JavaScript e React</li><li>SQL avançado e modelagem de dados</li><li>Testes automatizados (pytest, JUnit)</li><li>APIs REST, cloud e System Design</li></ul></div>
-      <div><h3>Habilidades comportamentais</h3><ul class="pontos"><li>Inglês: do básico ao fluente (C1)</li><li>Comunicação e apresentação</li><li>Gestão do tempo e disciplina</li><li>Trabalho em equipe</li><li>Liderança e visão de negócio</li></ul></div>
-    </div>
-    <h3 class="sec-tit">Cursos e certificações</h3>
-    <div class="tabela"><table>
-      <thead><tr><th>Ação</th><th>Instituição</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>Python para Dados</td><td>Alura</td><td><span class="st and">Em andamento</span></td></tr>
-        <tr><td>Desenvolvimento Back End com Java</td><td>Alura</td><td><span class="st and">Em andamento</span></td></tr>
-        <tr><td>Bacharelado em Engenharia de Software</td><td>Universidade Positivo</td><td><span class="st and">Em andamento</span></td></tr>
-        <tr><td>Inteligência Emocional, Excel e Atendimento ao Público</td><td>Fundação Bradesco</td><td><span class="st ok">Concluídos</span></td></tr>
-        <tr><td>Cronograma fixo de inglês técnico</td><td>Estudo contínuo</td><td><span class="st pl">Planejado, 2027</span></td></tr>
-        <tr><td>Certificação em cloud ou arquitetura de software</td><td>A definir</td><td><span class="st pl">Planejado, até 2029</span></td></tr>
-      </tbody>
-    </table></div>
-    <div class="duas">
-      <div><h3>Desafios e estratégias</h3><p><b>Pouco tempo e cansaço:</b> rotina intensa, com longos trajetos de ônibus. Uso as viagens para ouvir podcasts de tecnologia, praticar a escuta em inglês e revisar conteúdos, e mantenho academia e corrida para ter energia e clareza mental.</p><p><b>Disciplina:</b> blocos curtos de foco (timeboxing), consistência diária e grandes objetivos divididos em microtarefas.</p></div>
-      <div><h3>Monitoramento do progresso</h3><p>Autoavaliação em um dia fixo no fim de cada mês, guiada por quatro perguntas:</p><ul class="pontos"><li>Quais metas do mês eu alcancei?</li><li>Onde a disciplina falhou e como o cansaço afetou o rendimento?</li><li>O que funcionou e deve ser mantido?</li><li>Preciso ajustar algum prazo ou estratégia?</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 POSICIONAMENTO -->
-<section class="bloco" id="posicionamento">
-  <div class="wrap">
-    <div class="cab"><span class="n">05</span><h2>Estratégia de posicionamento</h2></div>
-    <p class="lead">Como pretendo ampliar minha rede de contatos e tornar meu trabalho visível para o mercado de tecnologia.</p>
-    <div class="diag">
-      <div><h3>Presença digital</h3><ul class="pontos"><li>LinkedIn e GitHub atualizados, com projetos documentados.</li><li>Compartilhar aprendizados, novos repositórios e problemas técnicos resolvidos.</li><li>Interagir com profissionais e recrutadores da área.</li><li>Manter o site nicolasbiscaia.dev como vitrine dos projetos.</li></ul></div>
-      <div><h3>Comunidades e eventos</h3><ul class="pontos"><li>Comunidades técnicas (Discord, fóruns e grupos de desenvolvimento).</li><li>Meetups, palestras e eventos de tecnologia em Curitiba e online.</li><li>Hackathons, para praticar em equipe e sair da bolha.</li><li>Contribuições em open source a partir de 2028.</li></ul></div>
-      <div><h3>Relacionamentos</h3><ul class="pontos"><li>Laços com professores e colegas da Universidade Positivo.</li><li>Mentorias informais no ambiente de trabalho.</li><li>Bom relacionamento com as áreas da Koube com que trabalho.</li></ul></div>
-    </div>
-    <blockquote>“Mostrar o que eu construo é tão importante quanto construir.”</blockquote>
-  </div>
-</section>
-
-<!-- 06 PITCH -->
-<section class="bloco escuro" id="pitch">
-  <div class="wrap">
-    <div class="cab"><span class="n">06</span><h2>Pitch profissional</h2></div>
-    <p class="lead">Em até 3 minutos, apresento minha trajetória, minhas competências, meus objetivos e o que me diferencia.</p>
-    <div class="video">
-      <iframe src="https://www.youtube-nocookie.com/embed/eI9efAvZAuo" title="Pitch profissional de Nicolas Biscaia" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-    </div>
-    <p class="video-alt">Se o vídeo não carregar aqui, <a href="https://youtu.be/eI9efAvZAuo" target="_blank" rel="noopener">assista direto no YouTube</a>.</p>
-    <div class="duas">
-      <div class="dest"><h3>Meu diferencial</h3><p>Vontade de ir sempre além. Sou muito curioso, gosto de aprender o tempo todo e de ajudar as pessoas ao meu redor. É isso que me leva a transformar problemas da operação em ferramentas simples, que funcionam no dia a dia.</p></div>
-      <div class="dest"><h3>O que busco</h3><p>Um estágio em desenvolvimento de software, onde eu possa aprender com o time e contribuir desde o início.</p></div>
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="wrap rv">
+    <p class="eyebrow">07 · Contato</p>
+    <h2>Vamos <em>conversar?</em></h2>
+    <p>Estou em busca de um estágio em desenvolvimento, dados ou áreas relacionadas, onde eu possa aprender com o time e contribuir desde o início.</p>
+    <div class="acoes">
+      <button type="button" class="btn copiar" data-email="nicolasbiscaia.dev@gmail.com">nicolasbiscaia.dev@gmail.com</button>
+      <a class="btn sec" href="https://www.linkedin.com/in/nicolasbiscaia/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn sec" href="https://github.com/NicolasBisc" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn sec" href="assets/curriculo-nicolas-biscaia.pdf" download>Currículo (PDF)</a>
     </div>
   </div>
 </section>
@@ -229,13 +266,18 @@
 
 <footer class="rodape">
   <div class="wrap">
-    <p class="nome">Nicolas Biscaia</p>
-    <p><a href="mailto:nicolasbiscaia.dev@email.com">nicolasbiscaia.dev@email.com</a></p>
-    <p class="redes"><a href="https://www.linkedin.com/in/nicolasbiscaia/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/NicolasBisc" target="_blank" rel="noopener">GitHub</a><a href="https://nicolasbiscaia.dev" target="_blank" rel="noopener">nicolasbiscaia.dev</a><a href="portfolio-nicolas-biscaia.pdf" download>Baixar PDF</a></p>
-    <p class="mini">Projeto Integrador Design da Minha Carreira, Universidade Positivo, 2026. Feito com HTML, CSS e JavaScript.</p>
+    <span>© 2026 Nicolas Biscaia · feito com HTML, CSS e JavaScript</span>
+    <span><a href="mailto:nicolasbiscaia.dev@gmail.com">E-mail</a><a href="https://www.linkedin.com/in/nicolasbiscaia/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/NicolasBisc" target="_blank" rel="noopener">GitHub</a></span>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <button type="button" id="lbFechar">Fechar</button>
+  <img id="lbImg" alt="">
+  <p id="lbLeg"></p>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
 </body>
 </html>

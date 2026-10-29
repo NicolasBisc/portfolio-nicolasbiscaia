@@ -1,35 +1,19 @@
-# Portfólio Profissional – Nicolas Biscaia
+# Nicolas Biscaia · site pessoal
 
-Projeto Integrador *Design da Minha Carreira* (A2.3) – Universidade Positivo.
+HTML, CSS e JavaScript puro. Não precisa instalar nada nem rodar build.
 
-Site estático em HTML, CSS e JavaScript puro, sem dependências nem build.
+## Rodar no computador
+Dê dois cliques em `index.html`, ou rode na pasta:
 
-## Como abrir no computador (localhost)
+    python -m http.server 8000
 
-**Opção 1 – mais simples:** dê dois cliques em `index.html`.
-
-**Opção 2 – servidor local** (se o vídeo do YouTube não carregar na opção 1), dentro desta pasta:
-
-```bash
-python -m http.server 8000
-```
-
-Depois acesse http://localhost:8000
-
-Ou, com Node instalado: `npx serve .`
+e acesse http://localhost:8000
 
 ## Publicar no Vercel
+Suba a pasta para o GitHub, importe o repositório em vercel.com (Framework Preset: **Other**, sem build) e clique em Deploy. Se for o mesmo repositório `portfolio-nicolasbiscaia`, basta substituir os arquivos e dar push: o link continua o mesmo.
 
-1. Suba esta pasta para um repositório no GitHub.
-2. Em vercel.com, clique em **Add New → Project** e importe o repositório.
-3. Framework Preset: **Other**. Não precisa de comando de build.
-4. Clique em **Deploy**.
-
-Ou pela linha de comando, dentro da pasta: `npx vercel --prod`
-
-## Arquivos
-
-- `index.html` – conteúdo do portfólio
-- `style.css` – identidade visual
-- `script.js` – menu, linha do tempo e animação do topo
-- `portfolio-nicolas-biscaia.pdf` – versão em documento (a mesma entregue no Blackboard)
+## Atualizar
+- Currículo: troque `assets/curriculo-nicolas-biscaia.pdf` mantendo o nome.
+- Foto: troque `assets/nicolas.jpg` (proporção 4:5).
+- Prints dos projetos: `assets/sistema-*.jpg`.
+- Habilidades e fases da carreira: listas `S` e `L` no `app.js`.
