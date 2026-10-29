@@ -36,11 +36,3 @@ assets/         currículo em PDF e prints dos projetos
 
 O site é publicado automaticamente pelo Vercel a cada atualização da branch
 `main`.
-
-## Atualizar
-
-- **Currículo:** substitua `assets/curriculo-nicolas-biscaia.pdf` mantendo o
-  nome, para os botões de download continuarem funcionando.
-- **Prints dos projetos:** `assets/sistema-*.jpg`. Use apenas telas com dados
-  anonimizados.
-- **Habilidades:** lista `S` no `app.js`.
